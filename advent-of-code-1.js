@@ -199,6 +199,7 @@ const numbers = `1753
 1117
 776`;
 
+
 const numbersArrButStillStrings = numbers.split('\n');
 
 const convertArrElementsToNumbers = arr => {
@@ -211,6 +212,7 @@ const convertArrElementsToNumbers = arr => {
 
 const numbersArr = convertArrElementsToNumbers(numbersArrButStillStrings);
 
+// Part 1
 const loopArrAndFindResult = arr => {
 	for (let i = 0; i < (arr.length - 2); i++ ) {
 		for (let j = i + 1; j < (arr.length - 1); j++) {
@@ -221,6 +223,20 @@ const loopArrAndFindResult = arr => {
 	}
 }
 
-const result = loopArrAndFindResult(numbersArr);
+// Part 2
+const loopArrThreeLayers = arr => {
+	for (let i = 0; i < arr.length - 3; i++) {
+		for (let j = i + 1; j < arr.length - 2; j++) {
+			for (let k = i + 2; k < arr.length - 1; k++) {
+				if (arr[i] + arr[j] + arr[k] === 2020) {
+					return (arr[i] * arr[j] * arr[k]);
+				}
+			}
+		}
+	}
+}
 
-console.log(result);
+const result = loopArrAndFindResult(numbersArr);
+const result2 = loopArrThreeLayers(numbersArr);
+
+console.log(result2);
