@@ -13,7 +13,7 @@ Collect stars by solving puzzles. Two puzzles will be made available on each day
 
 Before you leave, the Elves in accounting just need you to fix your expense report (your puzzle input); apparently, something isn't quite adding up.
 
-Specifically, they need you to **find the two entries that sum to 2020** and then multiply those two numbers together.
+Specifically, they need you to **find the two entries that sum to `2020** and then multiply those two numbers together.
 
 For example, suppose your expense report contained the following:
 ```
